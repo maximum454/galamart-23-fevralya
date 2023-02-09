@@ -173,13 +173,26 @@ body {
   margin-bottom: 58px;
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 
 .fevral23-hero__body {
   max-width: 1370px;
   padding: 0 10px;
   margin: 0 auto;
+  position: relative;
+}
+
+.fevral23-hero__body:before {
+  content: "";
+  position: absolute;
+  top: 149px;
+  right: -274px;
+  background-image: url("../img/airplant.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 355px;
+  height: 279px;
 }
 
 .fevral23-hero__body a {
@@ -263,6 +276,10 @@ body {
   border-color: #1880C1;
 }
 
+.fevral23-collection {
+  margin-bottom: 12px;
+}
+
 .fevral23-collection__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -292,14 +309,14 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(25% - 30px);
           flex: 1 0 calc(25% - 30px);
-  max-width: calc(25% - 30px);
+  max-width: 315px;
   height: 162px;
   padding: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(108%, #F2F2F2));
   background: -o-linear-gradient(top, #FFFFFF 0%, #F2F2F2 108%);
   background: linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 108%);
-  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   position: relative;
   display: -webkit-box;
@@ -466,7 +483,7 @@ body {
   }
 
   .remodal-wrapper {
-    padding: 71px 0 0;
+    padding: 20px 0 0;
   }
 
   .remodal {

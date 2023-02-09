@@ -3,11 +3,23 @@
 	margin-bottom: 58px;
 	background-image: url("../img/hero-bg.png");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top center;
 	&__body{
 		max-width: 1370px;
 		padding: 0 10px;
 		margin: 0 auto;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 149px;
+			right: -274px;
+			background-image: url("../img/airplant.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 355px;
+			height: 279px;
+		}
 		a{
 			color: #FFD84D;
 			text-decoration: underline;
