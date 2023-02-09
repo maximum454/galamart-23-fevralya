@@ -168,6 +168,30 @@ body {
   display: none;
 }
 
+.decor {
+  position: absolute;
+  width: 1454px;
+  height: 1454px;
+  background: -o-radial-gradient(50% 50%, 50% 50%, rgba(135, 241, 255, 0.6) 0%, rgba(187, 247, 255, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(135, 241, 255, 0.6) 0%, rgba(187, 247, 255, 0) 100%);
+  pointer-events: none;
+}
+
+.decor1 {
+  left: 1320px;
+  top: 0;
+}
+
+.decor2 {
+  left: -344px;
+  top: -614px;
+}
+
+.decor3 {
+  left: -250px;
+  bottom: -250px;
+}
+
 .fevral23-hero {
   padding-top: 27px;
   margin-bottom: 58px;
@@ -193,6 +217,7 @@ body {
   background-size: 100%;
   width: 355px;
   height: 279px;
+  pointer-events: none;
 }
 
 .fevral23-hero__body a {
@@ -344,6 +369,10 @@ body {
 
 .fevral23-collection__figure {
   margin: 0 auto;
+  background-image: url("../img/star.png");
+  background-size: 75px 78px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .fevral23-collection__figure img {
@@ -434,12 +463,6 @@ body {
   margin-bottom: 20px;
 }
 
-.fevral23-discounts__body {
-  max-width: 1410px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
 .fevral23-discounts__all {
   font-family: "PT Sans";
   font-weight: 400;
@@ -479,7 +502,7 @@ body {
   }
 
   .wrp {
-    background-image: none;
+    background-image: url("../img/wrp-bg-mobile.png");
   }
 
   .remodal-wrapper {
@@ -527,19 +550,53 @@ body {
     right: -5px;
   }
 
+  .decor {
+    width: 648px;
+    height: 648px;
+  }
+
+  .decor1 {
+    left: 102px;
+    top: 1270px;
+  }
+
+  .decor2 {
+    left: -398px;
+    top: -270px;
+  }
+
+  .decor3 {
+    display: none;
+  }
+
   .fevral23-hero {
-    margin-bottom: 53px;
+    background-image: url("../img/hero-bg-mobile.png");
+    padding-top: 21px;
+    margin-bottom: 51px;
+  }
+
+  .fevral23-hero__body:before {
+    top: 92px;
+    right: -92px;
+    width: 167px;
+    height: 180px;
+  }
+
+  .fevral23-hero__logo {
+    margin: 0 auto 25px;
+    max-width: 257px;
   }
 
   .fevral23-hero__name {
     font-size: 21px;
     line-height: 27px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   .fevral23-hero__subname {
     font-size: 20px;
     line-height: 25px;
+    margin-bottom: 29px;
   }
 
   .fevral23-hero__btn {
@@ -556,18 +613,32 @@ body {
     line-height: 34px;
   }
 
+  .fevral23-collection__title span {
+    display: block;
+  }
+
   .fevral23-collection__body {
     gap: 0 10px;
+  }
+
+  .fevral23-collection__body.show .fevral23-collection__item:nth-child(n+9) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .fevral23-collection__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 calc(50% - 10px);
             flex: 1 0 calc(50% - 10px);
-    max-width: calc(50% - 10px);
+    max-width: 50%;
     height: 160px;
     padding: 20px 10px;
     margin-bottom: 30px;
+  }
+
+  .fevral23-collection__item:nth-child(n+9) {
+    display: none;
   }
 
   .fevral23-collection__figure {
@@ -589,11 +660,19 @@ body {
     display: flex;
   }
 
+  .fevral23-discounts {
+    padding: 31px 10px;
+  }
+
   .fevral23-discounts__title {
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 20px;
     padding: 0;
+  }
+
+  .fevral23-discounts__title span {
+    display: block;
   }
 
   .fevral23-discounts__all {

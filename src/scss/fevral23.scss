@@ -142,9 +142,29 @@ body{
 	}
 }
 
+.decor{
+	position: absolute;
+	width: 1454px;
+	height: 1454px;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(135, 241, 255, 0.6) 0%, rgba(187, 247, 255, 0) 100%);
+	pointer-events: none;
+}
+.decor1{
+	left: 1320px;
+	top: 0;
+}
+.decor2{
+	left: -344px;
+	top: -614px;
+}
+.decor3{
+	left: -250px;
+	bottom: -250px;
+}
+
 @include r(767){
 	.wrp{
-		background-image: none;
+		background-image: url("../img/wrp-bg-mobile.png");
 	}
 	.remodal-wrapper{
 		padding: 20px 0 0;
@@ -184,6 +204,21 @@ body{
 
 	.swiper-button-next{
 		right: -5px;
+	}
+	.decor{
+		width: 648px;
+		height: 648px;
+	}
+	.decor1{
+		left: 102px;
+		top: 1270px;
+	}
+	.decor2{
+		left: -398px;
+		top: -270px;
+	}
+	.decor3{
+		display: none;
 	}
 }
 

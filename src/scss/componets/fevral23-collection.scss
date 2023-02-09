@@ -47,6 +47,10 @@
 	}
 	&__figure{
 		margin: 0 auto;
+		background-image: url("../img/star.png");
+		background-size: 75px 78px;
+		background-position: center;
+		background-repeat: no-repeat;
 		img{
 			display: block;
 			margin: 0 auto;
@@ -96,16 +100,30 @@
 		&__title{
 			font-size: 28px;
 			line-height: 34px;
+			span{
+				display: block;
+			}
 		}
 		&__body{
 			gap:0 10px;
+			&.show{
+				.fevral23-collection__item{
+					&:nth-child(n+9){
+						display: flex;
+					}
+				}
+			}
 		}
 		&__item{
 			flex: 1 0 calc(50% - 10px);
-			max-width: calc(50% - 10px);
+			max-width: 50%;
 			height: 160px;
 			padding: 20px 10px;
 			margin-bottom: 30px;
+			&:nth-child(n+9){
+				display: none;
+			}
+
 		}
 		&__figure{
 			margin: 0 auto;

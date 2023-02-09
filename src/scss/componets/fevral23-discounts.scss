@@ -23,9 +23,6 @@
 		margin-bottom: 20px;
 	}
 	&__body{
-		max-width: 1410px;
-		margin: 0 auto;
-		padding: 0 30px;
 	}
 	&__all{
 		font-family: 'PT Sans';
@@ -51,11 +48,15 @@
 		}
 	}
 	@include r(767){
+		padding: 31px 10px;
 		&__title{
 			font-size: 28px;
 			line-height: 34px;
 			margin-bottom: 20px;
 			padding: 0;
+			span{
+				display: block;
+			}
 		}
 		&__all{
 			display: none;

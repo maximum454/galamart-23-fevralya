@@ -19,6 +19,7 @@
 			background-size: 100%;
 			width: 355px;
 			height: 279px;
+			pointer-events: none;
 		}
 		a{
 			color: #FFD84D;
@@ -83,15 +84,30 @@
 		}
 	}
 	@include r(767){
-		margin-bottom: 53px;
+		background-image: url("../img/hero-bg-mobile.png");
+		padding-top: 21px;
+		margin-bottom: 51px;
+		&__body{
+			&:before{
+				top: 92px;
+				right: -92px;
+				width: 167px;
+				height: 180px;
+			}
+		}
+		&__logo{
+			margin: 0 auto 25px;
+			max-width: 257px;
+		}
 		&__name{
 			font-size: 21px;
 			line-height: 27px;
-			margin-bottom: 16px;
+			margin-bottom: 18px;
 		}
 		&__subname{
 			font-size: 20px;
 			line-height: 25px;
+			margin-bottom: 29px;
 		}
 		&__btn{
 			font-size: 18px;
