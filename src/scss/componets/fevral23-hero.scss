@@ -6,7 +6,7 @@
 	background-position: center;
 	&__body{
 		max-width: 1370px;
-		padding: 0 10px 20px;
+		padding: 0 10px;
 		margin: 0 auto;
 		a{
 			color: #FFD84D;
@@ -68,6 +68,22 @@
 				color: #1880C1;
 				border-color: #1880C1;
 			}
+		}
+	}
+	@include r(767){
+		margin-bottom: 53px;
+		&__name{
+			font-size: 21px;
+			line-height: 27px;
+			margin-bottom: 16px;
+		}
+		&__subname{
+			font-size: 20px;
+			line-height: 25px;
+		}
+		&__btn{
+			font-size: 18px;
+			line-height: 31px;
 		}
 	}
 }
