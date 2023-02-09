@@ -33,12 +33,22 @@
 		justify-content: flex-end;
 		text-decoration: none;
 		margin-bottom: 50px;
+		&:hover{
+
+			.fevral23-collection__figure{
+				img{
+					transform: scale(1.2);
+					transition: all .3s ease;
+				}
+			}
+		}
 	}
 	&__figure{
 		margin: 0 auto;
 		img{
 			display: block;
 			margin: 0 auto;
+			transition: all .3s ease;
 		}
 	}
 	&__name{

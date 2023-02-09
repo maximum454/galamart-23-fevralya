@@ -1,0 +1,28 @@
+.fevral23-discounts{
+	background: #FFFFFF;
+	border-radius: 20px;
+	max-width: 1430px;
+	margin: 0 auto 60px;
+	padding: 40px;
+	&__title{
+		font-family: $font1;
+		font-weight: 900;
+		font-size: 38px;
+		line-height: 46px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #222222;
+		margin-bottom: 30px;
+		span{
+			color: #1880C1;
+		}
+	}
+	&__filter{
+		margin-bottom: 20px;
+	}
+	&__body{
+		max-width: 1410px;
+		margin: 0 auto;
+		padding: 0 30px;
+	}
+}
