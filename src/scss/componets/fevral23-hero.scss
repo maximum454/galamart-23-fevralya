@@ -58,5 +58,13 @@
 			background-color: #ffffff;
 			color: #222222;
 		}
+		&--modal{
+			background: #1880C1;
+			color: #ffffff;
+			&:hover{
+				color: #1880C1;
+				border-color: #1880C1;
+			}
+		}
 	}
 }

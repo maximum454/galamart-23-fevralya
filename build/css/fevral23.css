@@ -103,6 +103,16 @@ html {
   color: #63D0FF;
 }
 
+.remodal a {
+  text-decoration: underline;
+  color: #1880C1;
+}
+
+.remodal span {
+  color: #1880C1;
+  font-style: italic;
+}
+
 .remodal ul {
   margin: 0 0 20px;
   padding: 0;
@@ -124,6 +134,17 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.remodal__title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 5px;
 }
 
 .remodal .remodal-close {
@@ -221,6 +242,16 @@ html {
   transition: all 0.3s ease;
   background-color: #ffffff;
   color: #222222;
+}
+
+.fevral23-hero__btn--modal {
+  background: #1880C1;
+  color: #ffffff;
+}
+
+.fevral23-hero__btn--modal:hover {
+  color: #1880C1;
+  border-color: #1880C1;
 }
 
 .fevral23-collection__title {
