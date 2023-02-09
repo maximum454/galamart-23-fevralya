@@ -1,0 +1,438 @@
+@charset "UTF-8";
+
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+  Maintain ratio mixin.
+  @param {List} [$ratio] Ratio the element needs to maintain. A 16:9 ratio would look like this:
+  .element { @include maintain-ratio(16 9); }
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-search.only-mobile {
+  position: relative;
+  margin: 0 -15px;
+  padding: 0 15px;
+  background-color: #ffffff;
+}
+
+.main {
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.main > .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.wrp {
+  position: relative;
+  font-family: "PT Sans";
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0071BC), to(#0071BC));
+  background: -o-linear-gradient(top, #0071BC 0%, #0071BC 100%);
+  background: linear-gradient(180deg, #0071BC 0%, #0071BC 100%);
+  padding-bottom: 0;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-desktop-none {
+  display: none;
+}
+
+.d-mobile-none {
+  display: block;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  padding-bottom: 0;
+}
+
+.remodal-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.remodal {
+  text-align: left;
+  position: relative;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  font-family: "PT Sans";
+  max-width: 660px;
+  padding: 50px 28px 50px 38px;
+}
+
+.remodal p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  color: #63D0FF;
+}
+
+.remodal ul {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.remodal ul li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #222222;
+  padding-left: 17px;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.remodal ul li:before {
+  content: "•";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.remodal .remodal-close {
+  top: 30px;
+  right: 30px;
+  left: auto;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/remodal-close.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.remodal .remodal-close:before {
+  display: none;
+}
+
+.fevral23-hero {
+  padding-top: 27px;
+  margin-bottom: 58px;
+}
+
+.fevral23-hero__body {
+  max-width: 1370px;
+  padding: 0 10px 20px;
+  margin: 0 auto;
+}
+
+.fevral23-hero__body a {
+  color: #FFD84D;
+  text-decoration: underline;
+}
+
+.fevral23-hero__body span {
+  color: #FFD84D;
+  font-weight: bold;
+}
+
+.fevral23-hero__logo {
+  margin: 0 auto 27px;
+}
+
+.fevral23-hero__logo img {
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: screen;
+}
+
+.fevral23-hero__name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 21px;
+}
+
+.fevral23-hero__subname {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.fevral23-hero__btn {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: center;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 13px 50px 14px;
+  margin: 0 auto;
+}
+
+.fevral23-collection__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 auto 40px;
+}
+
+.fevral23-collection__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1370px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fevral23-collection__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(25% - 30px);
+          flex: 1 0 calc(25% - 30px);
+  max-width: calc(25% - 30px);
+  height: 162px;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(108%, #F2F2F2));
+  background: -o-linear-gradient(top, #FFFFFF 0%, #F2F2F2 108%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 108%);
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.fevral23-collection__figure {
+  margin: 0 auto;
+}
+
+.fevral23-collection__figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+.fevral23-collection__name {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #222222;
+}
+
+.galamart20-slider {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 80px;
+}
+
+.galamart20-slider__header {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.galamart20-slider__title {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #E85222;
+  margin: 0;
+}
+
+.galamart20-slider__body {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.galamart20-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 30px 10px 10px;
+  background-color: #EC6B29;
+  background-image: url("../img/item-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 10px;
+  text-decoration: none !important;
+}
+
+.galamart20-slider__item:hover {
+  opacity: 0.8;
+}
+
+.galamart20-slider__figure {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  max-width: 30%;
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.galamart20-slider__name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 70%;
+          flex: 1 0 70%;
+  max-width: 70%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.galamart20-slider .swiper-galamart20 {
+  position: relative;
+}
+
+.galamart20-slider .swiper-slide {
+  opacity: 0.5;
+}
+
+.galamart20-slider .swiper-slide.swiper-slide-visible {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .d-desktop-none {
+    display: block;
+  }
+
+  .d-mobile-none {
+    display: none !important;
+  }
+
+  .wrp {
+    background-image: none;
+  }
+
+  .remodal-wrapper {
+    padding: 71px 0 0;
+  }
+
+  .remodal {
+    padding: 39px 13px 40px 18px;
+    border-radius: 20px;
+  }
+
+  .remodal ul {
+    margin: 0 0 20px;
+  }
+
+  .remodal ul li {
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 17px;
+  }
+
+  .remodal ul li:before {
+    content: "•";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .remodal .remodal-close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .swiper-button-prev {
+    left: -5px;
+  }
+
+  .swiper-button-next {
+    right: -5px;
+  }
+
+  .galamart20-slider__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .galamart20-slider__body {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}

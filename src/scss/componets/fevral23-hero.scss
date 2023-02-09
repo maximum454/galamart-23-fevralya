@@ -1,0 +1,56 @@
+.fevral23-hero{
+	padding-top: 27px;
+	margin-bottom: 58px;
+	&__body{
+		max-width: 1370px;
+		padding: 0 10px 20px;
+		margin: 0 auto;
+		a{
+			color: #FFD84D;
+			text-decoration: underline;
+		}
+		span{
+			color: #FFD84D;
+			font-weight: bold;
+		}
+	}
+	&__logo{
+		margin: 0 auto 27px;
+		img{
+			display: block;
+			margin: 0 auto;
+			mix-blend-mode: screen;
+		}
+	}
+	&__name{
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 39px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 21px;
+	}
+	&__subname{
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 28px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 24px;
+	}
+	&__btn{
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 31px;
+		text-align: center;
+		color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: transparent;
+		border: 1px solid #ffffff;
+		border-radius: 10px;
+		padding: 13px 50px 14px;
+		margin: 0 auto;
+	}
+}

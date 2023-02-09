@@ -1,0 +1,171 @@
+@import "mixin";
+@import "fonts";
+
+* {
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+.header-search.only-mobile{
+	position: relative;
+	margin: 0 -15px;
+	padding: 0 15px;
+	background-color: #ffffff;
+}
+.main{
+	padding-top: 0;
+	overflow: hidden;
+}
+.main>.container{
+	max-width:100%;
+	padding: 0;
+}
+body{
+
+}
+.wrp {
+	position: relative;
+	font-family: "PT Sans";
+	overflow: hidden;
+	background: linear-gradient(180deg, #0071BC 0%, #0071BC 100%);
+	padding-bottom: 0;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.main{
+	padding-bottom: 0;
+}
+
+.remodal-overlay{
+	background-color: rgba(0,0,0,.3);
+}
+.remodal{
+	text-align: left;
+	position: relative;
+	background: #FFFFFF;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+	border-radius: 30px;
+	font-family: "PT Sans";
+	max-width: 660px;
+	padding: 50px 28px 50px 38px;
+	p{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0 0 24px;
+		color: #63D0FF;
+	}
+	ul{
+		margin: 0 0 20px;
+		padding: 0;
+		list-style: none;
+		li{
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 31px;
+			color: #222222;
+			padding-left: 17px;
+			margin: 0 0 5px;
+			position: relative;
+			&:before{
+				content: '•';
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+	.remodal-close{
+		top: 30px;
+		right: 30px;
+		left: auto;
+		width: 16px;
+		height: 16px;
+		background-image: url("../img/remodal-close.svg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		&:before{
+			display: none;
+		}
+	}
+}
+
+@include r(767){
+	.wrp{
+		background-image: none;
+	}
+	.remodal-wrapper{
+		padding: 71px 0 0;
+	}
+	.remodal{
+		padding: 39px 13px 40px 18px;
+		border-radius: 20px;
+		ul{
+			margin: 0 0 20px;
+			li{
+
+				font-size: 16px;
+				line-height: 21px;
+				padding-left: 17px;
+				&:before{
+					content: '•';
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+		.remodal-close{
+			top: 20px;
+			right: 20px;
+		}
+	}
+
+	.swiper-button-prev{
+		left: -5px;
+	}
+
+	.swiper-button-next{
+		right: -5px;
+	}
+}
+
+@import "componets/fevral23-hero";
+@import "componets/fevral23-collection";
+@import "componets/galamart20-slider";
+
+
+
+
