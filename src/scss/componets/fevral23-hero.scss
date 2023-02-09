@@ -1,6 +1,9 @@
 .fevral23-hero{
 	padding-top: 27px;
 	margin-bottom: 58px;
+	background-image: url("../img/hero-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
 	&__body{
 		max-width: 1370px;
 		padding: 0 10px 20px;

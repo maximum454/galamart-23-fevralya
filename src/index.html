@@ -4,8 +4,8 @@
 <head>
 
     @@include('./template/_meta.html',{
-    "title": "Скидка 20% на онлайн-заказ",
-    "description": "Вы получили в подарок промокод на скидку в 20%.", })
+    "title": "23 февраля в Галамарт — распродажа, скидки, акции",
+    "description": "Распродажа товаров со скидкой до 60% при заказе на сайте Галамарт, бесплатная доставка! Распродажа пройдет с 17 по 23 февраля", })
     <!-- CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,6 +140,7 @@
     </section>
 
     <section class="fevral23-discounts">
+        <a href="https://galamart.ru/collections/vse-tovary-23/" target="_blank" class="fevral23-discounts__all">Смотреть все</a>
         <div class="fevral23-discounts__title">Подарки со скидками <span>до 60%</span></div>
         <div class="fevral23-discounts__filter">
             <div>Кому:</div>
@@ -172,36 +173,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
 <script>
-    const swiperGalamart20 = new Swiper('.swiper-galamart20', {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        observer: true,
-        watchSlidesProgress: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1.1,
-                spaceBetween: 10
-            },
-            480: {
-                slidesPerView: 1.5,
-                spaceBetween: 10
-            },
-            640: {
-                slidesPerView: 2,
-            },
-            920: {
-                slidesPerView: 3,
-            },
-            1300: {
-                slidesPerView: 4,
-                spaceBetween: 30
-            }
-        }
-    })
 </script>
 
 </body>

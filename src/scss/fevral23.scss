@@ -22,13 +22,15 @@ html{
 	padding: 0;
 }
 body{
-
+	background: linear-gradient(180deg, #0071BC 0%, #0071BC 100%);
 }
 .wrp {
 	position: relative;
 	font-family: "PT Sans";
 	overflow: hidden;
-	background: linear-gradient(180deg, #0071BC 0%, #0071BC 100%);
+	background-image: url("../img/wrp-bg.png");
+	background-repeat: no-repeat;
+	background-position: top center;
 	padding-bottom: 0;
 }
 
